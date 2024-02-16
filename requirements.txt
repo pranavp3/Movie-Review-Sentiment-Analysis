@@ -1,3 +1,4 @@
 streamlit
 gdown
 transformers
+tensorflow
