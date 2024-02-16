@@ -9,10 +9,10 @@ labels = {"LABEL_1" :"POSITIVE", "LABEL_0" :"NEGATIVE"}
 BASE_DIR = os.getcwd()
 import gdown
 url = "https://drive.google.com/drive/folders/1-6BgNpyOCcG_4scieAuhIJPU1Rcr5_zI"
-url = "https://drive.google.com/drive/folders/1NnPO7hiqzkOpGXwzLPcWHRV1ZkYF7KsH"
+url2 = "https://drive.google.com/drive/folders/1NnPO7hiqzkOpGXwzLPcWHRV1ZkYF7KsH"
 if os.path.isdir('tokenizer') == False and os.path.isdir('sentiBert_model_imdb') == False:
     gdown.download_folder(url, quiet=True, use_cookies=False)
-    gdown.download_folder(url, quiet=True, use_cookies=False)
+    gdown.download_folder(url2, quiet=True, use_cookies=False)
 
 ###Set Tokenizer and Model###
 tokenizer = DistilBertTokenizerFast.from_pretrained(BASE_DIR + "/tokenizer")
